@@ -8,9 +8,9 @@ Download binary file, give it permissions to execute, and move to /usr/bin/ or ~
 
 
 ```
-chmod +x quick-docker-runner
-mv quick-docker-runner ~/.local/bin/
-quick-docker-runner
+chmod +x docker_runner
+mv docker_runner ~/.local/bin/
+docker_runner
 ```
 
 ## Building from source
@@ -26,8 +26,8 @@ cargo run
 For release from source run 
 
 ```
-cargo run --release
+cargo build --release
 cd target/release
-chmod +x quick-docker-runner
-./quick-docker-runner
+chmod +x docker_runner
+./docker_runner
 ```
